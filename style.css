@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: chocolate;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+#flexContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+#mainContent{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 20vw;
+    height: 80vh;
+    border: 1px solid black;
+    border-radius: 15px;
+    background: #ff7847;
+}
+#title{
+    border-bottom: 1px solid chocolate;
+    padding: 1rem;
+}
+#bill{
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+    gap: 2rem;
+}
+#guest{
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+    gap: 2rem;
+    border-bottom: 2px ridge chocolate;
+}
+.inputs{
+    border: 1px solid white;
+    color: chocolate;
+    border-radius: 15px;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    margin: 1rem;
+}
+#qualityLevel{
+    width: 200px;
+}
+#submitButton{
+    padding: 1rem;
+    border: 1px solid chocolate;
+    border-radius: 15px;
+    color: chocolate;
+    background: #333;
+}
+#submitButton:hover{
+    color: #333;
+    background: chocolate;
+    border: 1px solid #333;
+    transform: scale(1.1);
+    transition: all 1s;
+}
+/*responsive*/
+
+@media screen and (max-width: 992px) {
+    #mainContent{
+        width: 60vw;
+    }
+}

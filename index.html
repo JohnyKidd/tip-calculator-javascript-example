@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
+        <title>Tip Calculator</title>
+    </head>
+    <body>
+        <div id="flexContainer">
+            <div id="mainContent">
+                <h1 id="title">Tip Calculator</h1>
+                <div id="bill">
+                    <label for="billInput">Bill Amount ($):</label>
+                    <input type="number" id="billInput" class="inputs">
+                </div>
+                <div id="guest">
+                    <label for="guestInput">Number of guests:</label>
+                    <input type="number" id="guestInput" class="inputs">
+                </div>
+                <div id="quality">
+                    <label id="qualityLabel" for="qualityLevel">Quality:</label>
+                    <select id="qualityLevel" class="inputs">
+                        <option value="" disabled selected>Choose</option>
+                        <option value="0.3">30% - Great</option>
+                        <option value="0.2">20% - Good</option>
+                        <option value="0.1">10% - Average</option>
+                    </select>
+                </div>
+                <div id="submit">
+                    <button id="submitButton">
+                        Calculate
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
